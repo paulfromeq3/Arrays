@@ -8,6 +8,9 @@ class EntryPoint
         // You can have arrays of different types
         // Access any value in an array using its index.
         // Indices always start at zero.
+        // Trying to access an index which isn't assigned a value returns a zero.
+        // Trying to access an index higher than the number of elements causes an ex
+
 
         // Create an array of temperatures
         // First approach: create an empty array of a set number of values.
