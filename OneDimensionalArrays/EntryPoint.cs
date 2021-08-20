@@ -5,6 +5,8 @@ class EntryPoint
 {
     static void Main(string[] args)
     {
-        // One dimensional arrays
+        // Ouputting arrays in the console
+        // Three different ways
+
     }
 }
