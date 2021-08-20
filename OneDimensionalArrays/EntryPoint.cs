@@ -7,6 +7,10 @@ class EntryPoint
     {
         // Ouputting arrays in the console
         // Three different ways
-
+        string[] beverages = { "coffee", "cola", "whiskey", "milkshake", "water" };
+        for (int i = 0; i < beverages.Length; i++)
+        {
+            Console.WriteLine(beverages[i]);
+        }
     }
 }
