@@ -82,27 +82,44 @@ class EntryPoint
             }
         }
 
+        Console.Write("Low temps:");
         foreach (var item in levelOne)
         {
-            Console.WriteLine("Low temps: " + item);
+            if (item != 0)
+            {
+            Console.Write(" " + item);
+            }
         }
         Console.WriteLine();
 
+        Console.Write("Medium-Low temps:");
         foreach (var item in levelTwo)
         {
-            Console.WriteLine("Medium-Low temps: " + item);
+            if (item != 0)
+            {
+                Console.Write(" " + item);
+            }
         }
         Console.WriteLine();
 
+        Console.Write("Medium-High temps:");
         foreach (var item in levelThree)
         {
-            Console.WriteLine("Medium-High temps: " + item);
+            if (item != 0)
+            {
+                Console.Write(" " + item);
+            }
         }
         Console.WriteLine();
 
+        Console.Write("High temps:");
         foreach (var item in levelFour)
         {
-            Console.WriteLine("High temps: " + item);
+            if (item != 0)
+            {
+                Console.Write(" " + item);
+
+            }
 
         }
     }
