@@ -33,15 +33,17 @@ class EntryPoint
         // Looks like -->  (typecasting[])array.Clone()
         // (int[])array.Clone()
 
+        array[2] = 3;
         int[] firstWayToCloneAnArray = (int[])array.Clone();
 
         // Let's see what happens...
+        Console.WriteLine("\n\nFirst way to correctly clone an array.");
         Console.WriteLine("array[2] = " + array[2]);
-        Console.WriteLine("wrongWayToCopyAnArray[2] = " + wrongWayToCopyAnArray[2]);
+        Console.WriteLine("firstWayToCloneAnArray[2] = " + firstWayToCloneAnArray[2]);
         Console.WriteLine("\nNow change the value of array[2] to 999999 and it is reflected in the second array automatically.");
         array[2] = 999999;
         Console.WriteLine("array[2] = " + array[2]);
-        Console.WriteLine("wrongWayToCopyAnArray[2] = " + wrongWayToCopyAnArray[2]);
+        Console.WriteLine("firstWayToCloneAnArray[2] = " + firstWayToCloneAnArray[2]);
 
 
 
