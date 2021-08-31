@@ -45,8 +45,40 @@ class EntryPoint
         Console.WriteLine("array[2] = " + array[2]);
         Console.WriteLine("firstWayToCloneAnArray[2] = " + firstWayToCloneAnArray[2]);
 
+        // Second way
+        // Use the Array.Copy() method
+        // Used to copy values from the first array into the second array
+        // The main difference between this and the array.Clone() method is that
+        // the Array.Copy() method requires you to already have an array setup to receive the values.
+
+        array[2] = 3;  // set the index element back to the original value
 
 
+        int[] secondWayToCloneAnArray = new int[array.Length];
+        // That statement creates a new integer array the same length as the array "array[]"
+
+        // You need the name of the source array, the destination array, length (how many elements you want to copy from the first array to the second array.
+        // If you want to copy the whole array, use array.Length
+        // If you ran this code...
+        Array.Copy(array, secondWayToCloneAnArray, 3);
+        // It would copy over only the first three elements in the array.
+
+        Array.Copy(array, secondWayToCloneAnArray, array.Length);
+
+
+        // Let's see what happens...
+        Console.WriteLine("\n\nSecond way to correctly clone an array.");
+        Console.WriteLine("array[2] = " + array[2]);
+        Console.WriteLine("secondWayToCloneAnArray[2] = " + secondWayToCloneAnArray[2]);
+        Console.WriteLine("\nNow change the value of array[2] to 999999 and it is reflected in the second array automatically.");
+        array[2] = 999999;
+        Console.WriteLine("array[2] = " + array[2]);
+        Console.WriteLine("firstWayToCloneAnArray[2] = " + firstWayToCloneAnArray[2]);
+
+    }
+
+    static void ArrayCopy()
+    {
 
     }
 }
